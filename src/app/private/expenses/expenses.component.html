@@ -1,0 +1,33 @@
+<div class="container mx-auto">
+    <!-- <table>
+        <tr>
+            <th>
+                Naziv
+            </th>
+            <th>
+                Tip
+            </th>
+            <th>
+                
+            </th>
+            <th>
+                Naziv
+            </th>
+        </tr>
+    </table> -->
+    <div *ngFor="let expense of expenses$ | async" (click)="viewExpense(expense.id)"
+        class="w-100 border-2 border-purple-500 rounded-md px-6 py-4 my-1 grid grid-cols-10 hover:border-neutral-300 hover:bg-neutral-800 duration-200 cursor-pointer hover:text-white">
+        <div class="text-xl col-span-7">
+            {{ expense.name }}
+        </div>
+        <div class="text-purple-500 font-semibold col-span-1">
+            {{ expense.type }}
+        </div>
+        <div class="text-neutral-200 font-bold col-span-1">
+            {{ expense.price | number: '1.2-2' }} KM
+        </div>
+        <div class="px-4 py-1 rounded-md bg-purple-500 text-white font-semibold text-center col-span-1">
+            {{ expense.status }}
+        </div>
+    </div>
+</div>

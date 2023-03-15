@@ -1,0 +1,20 @@
+export const STORAGE_TOKEN = 'token';
+export const STORAGE_APP_VERSION = 'app_version';
+export const STORAGE_LANGUAGE = 'selected_language';
+export const NUMBER_REGEX = '^[0-9]*$';
+export const EMAIL_REGEX = '^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$';
+export const PASSWORD_REGEX = '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-zd$@$!%*?&].{8,60}$';
+export const PACKAGED_CODE_REGEX = '^(\d{6}\*?)$';
+export const TEXT_INPUT_DEBOUNCE = 400;
+export const TEXT_INPUT_MIN_LENGTH = 1;
+export const BOOLEAN_INPUT_DEBOUNCE = 200;
+export const SORT_DEBOUNCE = 400;
+export const MAX_REQUEST_TIME = 20000;
+export const MOBILE_BREAKPOINT = 768; // px
+export const CACHE_TIME_MILISECONDS: number = 60000;
+export const LOGO_PATH = 'assets/img/logo.png';
+export const NOTIFICATIONS_REFRESH_TIMER = 60000;
+export const BACKEND_DATE_FORMAT = 'YYYY-MM-DD';
+export const BACKEND_DATE_TIME_FORMAT = 'YYYY-MM-DDTHH:mm:ss';
+export const LOCALE_BS = 'bs_BA';
+export const LOCALE_EN = 'en_US';

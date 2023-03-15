@@ -1,0 +1,21 @@
+<div class="container mx-auto">
+    <div class="text-center w-100 text-2xl py-6">
+        Korisnički panel
+    </div>
+    <div class="flex flex-col justify-start py-4 text-lg">
+        <div class="text-neutral-500">
+            Korisničko ime:
+        </div>
+        <div class="text-neutral-200">
+            {{ userData?.username}}
+        </div>
+    </div>
+    <div class="flex flex-col justify-start py-4 text-lg">
+        <div class="text-neutral-500">
+            Email adresa:
+        </div>
+        <div class="text-neutral-200">
+            {{ userData?.email}}
+        </div>
+    </div>
+</div>
